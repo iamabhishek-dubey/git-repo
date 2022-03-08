@@ -33,3 +33,13 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls -la
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.0.0
+        with:
+          node-version: 14
+          
+      - name: Check nodejs version
+        run: |
+          node -v
+
